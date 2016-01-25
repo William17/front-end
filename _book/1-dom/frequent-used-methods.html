@@ -1,0 +1,304 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>常用方法 | Introduction</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    
+    <link rel="prev" href="../1-dom/1-dom.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="1.1"
+        data-chapter-title="常用方法"
+        data-filepath="1-dom/frequent-used-methods.md"
+        data-basepath=".."
+        data-revision="Fri Jan 22 2016 19:24:32 GMT+0800 (CST)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="1-dom/1-dom.html">
+            
+                
+                    <a href="../1-dom/1-dom.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        DOM
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.1" data-path="1-dom/frequent-used-methods.html">
+            
+                
+                    <a href="../1-dom/frequent-used-methods.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        常用方法
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >Introduction</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h2 id="&#x65B0;&#x5EFA;">&#x65B0;&#x5EFA;</h2>
+<ul>
+<li><code>Document#createElement(tagName)</code></li>
+<li><code>Document#createTextNode(str)</code></li>
+<li><code>Node#cloneNode(deep)</code><ul>
+<li>&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x4E0D;&#x4F1A;&#x590D;&#x5236;&#x4E8B;&#x4EF6;<sup><a href="#fn_7" id="reffn_7">7</a></sup></li>
+<li>&#x5982;&#x679C;<code>deep</code>&#x4E3A;<code>true</code>, &#x5219;&#x4F1A;&#x590D;&#x5236;&#x6574;&#x4E2A;&#x8282;&#x70B9;&#x6811;; &#x5982;&#x679C;&#x4E3A;<code>false</code>, &#x5219;&#x53EA;&#x4F1A;&#x590D;&#x5236;&#x5F53;&#x524D;&#x6807;&#x7B7E;.<sup><a href="#fn_7" id="reffn_7">7</a></sup></li>
+<li>&#x4F7F;&#x7528;&#x7684;&#x65F6;&#x5019;&#x6700;&#x597D;&#x4F20;&#x5165;<code>deep</code>&#x53C2;&#x6570;, &#x56E0;&#x4E3A;&#x90E8;&#x5206;&#x6D4F;&#x89C8;&#x5668;&#x9ED8;&#x8BA4;&#x4E3A;<code>true</code>, &#x6709;&#x4E9B;&#x5219;&#x4E3A;<code>false</code><sup><a href="#fn_7" id="reffn_7">7</a></sup></li>
+</ul>
+</li>
+</ul>
+<h2 id="&#x67E5;&#x627E;">&#x67E5;&#x627E;</h2>
+<ul>
+<li><code>Document#getElementById(elementId)</code><ul>
+<li>IE678&#x4E2D;&#x4F1A;&#x83B7;&#x53D6;&#x5230;<code>[name=elementId]</code>&#x7684;&#x90E8;&#x5206;&#x5143;&#x7D20;, &#x6240;&#x4EE5;&#x6CE8;&#x610F;&#x9875;&#x9762;&#x4E2D;&#x7684;&#x5143;&#x7D20;&#x7684;<code>id</code> &#x5C5E;&#x6027;&#x503C;&#x4E0D;&#x80FD;&#x4E0E;&#x5176;&#x4ED6;&#x5143;&#x7D20;&#x7684;<code>name</code>&#x5C5E;&#x6027;&#x503C;&#x6709;&#x91CD;&#x590D;<a href="http://w3help.org/zh-cn/causes/SD9001" target="_blank">1</a></li>
+<li>IE678&#x4E2D;<code>elementId</code>&#x5927;&#x5C0F;&#x5199;&#x4E0D;&#x654F;&#x611F;, &#x89C4;&#x8303;&#x91CC;&#x5B83;&#x5E94;&#x8BE5;&#x5927;&#x5C0F;&#x5199;&#x654F;&#x611F;.<sup><a href="#fn_2" id="reffn_2">2</a></sup></li>
+</ul>
+</li>
+<li><code>Document#getElementsByTagName(tagName)</code></li>
+<li><code>Document#getElementsByClassName(className)</code></li>
+<li><code>HTMLDocument#getElementsByName(elementName)</code><ul>
+<li>IE678&#x4E2D;<code>elementName</code>&#x5927;&#x5C0F;&#x5199;&#x4E0D;&#x654F;&#x611F;, &#x89C4;&#x8303;&#x91CC;&#x5B83;&#x5E94;&#x8BE5;&#x5927;&#x5C0F;&#x5199;&#x654F;&#x611F;.<sup><a href="#fn_3" id="reffn_3">3</a></sup></li>
+<li>&#x5728; IE &#x4E2D;&#xFF0C;&#x53EA;&#x6709;<code>BUTTON, TEXTAREA, APPLET, SELECT, FORM, FRAME, IFRAME, IMG, A, INPUT, OBJECT, MAP, PARAM, META</code>&#x8FD9;&#x4E9B;&#x6807;&#x7B7E;&#x6709; &apos;name&apos; &#x5C5E;&#x6027;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x83B7;&#x53D6;&#x4ED6;&#x4EEC;&#x521B;&#x5EFA;&#x7684; DOM &#x5143;&#x7D20;&#xFF0C;&#x4F46;&#x5728;&#x5176;&#x4ED6;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#xFF0C;&#x6709; &apos;name&apos; &#x5C5E;&#x6027;&#x7684;&#x5176;&#x4ED6;&#x6807;&#x7B7E;&#x4E5F;&#x53EF;&#x4EE5;&#x7528;&#x8FD9;&#x79CD;&#x65B9;&#x6CD5;&#x83B7;&#x53D6;&#x3002;&#x5373; <DIV name="test"><DIV> &#x53EF;&#x4EE5;&#x5728;&#x5176;&#x4ED6;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x901A;&#x8FC7;&#x4F7F;&#x7528; document.getElementsByName(&apos;test&apos;)[0] &#x6765;&#x83B7;&#x53D6;&#xFF0C;&#x4F46;&#x5728; IE &#x4E2D;&#x5374;&#x4E0D;&#x884C;&#xFF0C;&#x5F97;&#x5230;&#x7684;&#x5C06;&#x662F; undefined.<sup><a href="#fn_3" id="reffn_3">3</a></sup></DIV></DIV></li>
+</ul>
+</li>
+<li><code>Document#querySelector(selector)</code></li>
+<li><code>Document#querySelectorAll(selector)</code></li>
+</ul>
+<ul>
+<li><code>Element#getElementsByTagName(tagName)</code></li>
+<li><code>Element#getElementsByClassName(className)</code></li>
+<li><code>Element#querySelector(selector)</code></li>
+<li><code>Element#querySelectorAll(selector)</code></li>
+</ul>
+<p>N.B.</p>
+<ul>
+<li>IE8+&#x652F;&#x6301;<code>querySelector</code>&#x548C;<code>querySelectorAll</code>, &#x4F46;IE8&#x4EC5;&#x652F;&#x6301;CSS2.1&#x9009;&#x62E9;&#x5668;<sup><a href="#fn_4" id="reffn_4">4</a></sup></li>
+</ul>
+<h2 id="attribute">Attribute</h2>
+<ul>
+<li><code>Node#hasAttribute(attr)</code></li>
+<li><code>Node#getAttribute(attr)</code></li>
+<li><code>Node#setAttribute(attr, value)</code></li>
+<li><code>Node#removeAttribute(attr)</code></li>
+<li><p>HTML&#x7279;&#x6B8A;&#x5B9E;&#x73B0;</p>
+<ul>
+<li><code>htmlElement.&lt;attribute_name&gt;</code><ul>
+<li>xml&#x4E0D;&#x652F;&#x6301;&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;</li>
+<li>&#x4E0D;&#x652F;&#x6301;&#x975E;&#x6807;&#x51C6;&#x5C5E;&#x6027;</li>
+</ul>
+</li>
+<li><code>htmlElement.&lt;attribute_name&gt; = value</code><ul>
+<li>xml&#x4E0D;&#x652F;&#x6301;&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;</li>
+<li>&#x4E0D;&#x652F;&#x6301;&#x975E;&#x6807;&#x51C6;&#x5C5E;&#x6027;</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>classList&#x5C5E;&#x6027;<br>IE10&#x4EE5;&#x4E0A;&#x652F;&#x6301;<code>classList</code></p>
+<ul>
+<li><code>Element#classList</code></li>
+<li><code>Element#classList.add(value)</code></li>
+<li><code>Element#classList.remove(value)</code></li>
+<li><code>Element#classList.toggle(value[, testCondition])</code><ul>
+<li>&#x76EE;&#x524D;(2016&#x5E74;1&#x6708;22&#x65E5;)IE&#x4E0D;&#x652F;&#x6301;<code>toggle</code>&#x65B9;&#x6CD5;&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;</li>
+</ul>
+</li>
+<li><code>Element#classList.contains(value)</code></li>
+</ul>
+</li>
+<li><p>style&#x5C5E;&#x6027;</p>
+<ul>
+<li><code>HTMLElement#style.&lt;css_attribute&gt;</code></li>
+<li><code>HTMLElement#style.&lt;css_attribute&gt; = value</code></li>
+</ul>
+</li>
+</ul>
+<h2 id="&#x8282;&#x70B9;&#x7C7B;&#x578B;-&#x540D;&#x79F0;&#x548C;&#x503C;">&#x8282;&#x70B9;&#x7C7B;&#x578B;, &#x540D;&#x79F0;&#x548C;&#x503C;</h2>
+<ul>
+<li><code>Node#nodeType</code> 1 &#x4E3A;<code>Node.ELEMENT_NODE</code>, 3 &#x4E3A;<code>Node.TEXT_NODE</code></li>
+<li><code>Node#nodeName</code> &#x5982;&#x679C;&#x8282;&#x70B9;&#x7C7B;&#x578B;&#x4E3A;<code>Node.ELEMENT_NODE</code>,&#x8FD4;&#x56DE;&#x6807;&#x7B7E;&#x540D;;&#x5982;&#x679C;&#x8282;&#x70B9;&#x7C7B;&#x578B;&#x4E3A;<code>Node.ELEMENT_NODE</code>, &#x8FD4;&#x56DE;&apos;#text&apos;<ul>
+<li>&#x5982;&#x679C;&#x8981;&#x6BD4;&#x8F83;&#x6807;&#x7B7E;&#x540D;, &#x6700;&#x597D;&#x5148;&#x628A;&#x5B83;<code>upperCase</code>&#x6216;<code>lowerCase</code><sup><a href="#fn_6" id="reffn_6">6</a></sup></li>
+</ul>
+</li>
+<li><code>Node#nodeValue</code> &#x5982;&#x679C;&#x8282;&#x70B9;&#x7C7B;&#x578B;&#x4E3A;<code>Node.TEXT_NODE</code>,&#x53EF;&#x4EE5;&#x5F97;&#x5230;&#x8282;&#x70B9;&#x5185;&#x5BB9;</li>
+</ul>
+<h2 id="navigating-nodes">Navigating Nodes</h2>
+<ul>
+<li><code>Node#parentNode</code> </li>
+<li><code>Node#previousSibling</code></li>
+<li><p>`Node#nextSibling</p>
+</li>
+<li><p><code>Node#childNodes</code></p>
+</li>
+<li><code>Node#children</code></li>
+<li><code>Node#firstChild</code></li>
+<li><code>Node#lastChild</code></li>
+<li><code>Node#hasChildNodes()</code></li>
+</ul>
+<h2 id="&#x8282;&#x70B9;&#x5185;&#x5BB9;">&#x8282;&#x70B9;&#x5185;&#x5BB9;</h2>
+<ul>
+<li><code>Node#innerHTM</code></li>
+</ul>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../1-dom/1-dom.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: DOM"><i class="fa fa-angle-left"></i></a>
+        
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"livereload":{}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
